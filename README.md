@@ -2,6 +2,8 @@
 
 This is a starter project test for [using Yarn PnP with Angular 16](https://github.com/angular/angular-cli/issues/16980).
 
+## Project Creation
+
 Created via:
 
 1.
@@ -45,3 +47,13 @@ Then, open a *.ts file, press `ctrl + shift + p`, type/select "Select TypeScript
 More info: https://yarnpkg.com/getting-started/editor-sdks#vscode
 
 8. Run it in VS Code (F5)
+
+## Running It
+
+```bash
+git clone git@github.com:johncrim/ng16-yarn-pnp.git
+cd ng16-yarn-pnp
+yarn start
+```
+
+WOAAA!! #mind-blown
