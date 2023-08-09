@@ -1,6 +1,6 @@
 # Ng16YarnPnp
 
-This is a minimal test for [using Yarn PnP with Angular 16](https://github.com/angular/angular-cli/issues/16980).
+This is a starter project test for [using Yarn PnP with Angular 16](https://github.com/angular/angular-cli/issues/16980).
 
 Created via:
 
