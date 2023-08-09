@@ -38,8 +38,10 @@ yarn ng g application myapp
 yarn dlx @yarnpkg/sdks vscode
 ```
 
-and commit the changes
+and commit the changes.
 
-More info:
+Then, open a *.ts file, press `ctrl + shift + p`, type/select "Select TypeScript Version", then pick "Use Workspace Version".
+
+More info: https://yarnpkg.com/getting-started/editor-sdks#vscode
 
 8. Run it in VS Code (F5)
