@@ -5,7 +5,7 @@ This is a minimal test for [using Yarn PnP with Angular 16](https://github.com/a
 Created via:
 
 1.
-```
+```bash
 mkdir ng16-yarn-pnp
 cd ng16-yarn-pnp
 yarn set version berry
@@ -21,15 +21,25 @@ yarn dlx --package @angular/cli ng new ng16-yarn-pnp --directory=. --package-man
 4. Commit everything thus far
 
 5. Add a library
-```
+```bash
 yarn ng g library mylib
 ```
 
 and commit it.
 
 6. Add an app
-```
+```bash
 yarn ng g application myapp
 ```
 
-and commit it.
+7. Install the VS Code files for Yarn PnP integration
+
+```bash
+yarn dlx @yarnpkg/sdks vscode
+```
+
+and commit the changes
+
+More info:
+
+8. Run it in VS Code (F5)
