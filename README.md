@@ -1,27 +1,47 @@
 # Ng16YarnPnp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
+This is a minimal test for [using Yarn PnP with Angular 16](https://github.com/angular/angular-cli/issues/16980).
 
-## Development server
+Created via:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1.
+```
+mkdir ng16-yarn-pnp
+cd ng16-yarn-pnp
+yarn set version berry
+mv .\package.json _package.json # Needed so that the yarn pnp package.json isn't in the way
+yarn dlx --package @angular/cli ng new ng16-yarn-pnp --directory=. --package-manager=yarn --create-application=false --minimal --commit=false
+```
 
-## Code scaffolding
+2. Then, move the contents of `_package.json` to `package.json`, and delete `_package.json`.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3. Update .gitignore per: https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+(I used the zero-install .gitignore)
 
-## Build
+4. Commit everything thus far
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+4. Add a library
+```
+yarn ng g library mylib
+```
 
-## Running unit tests
+5. Try building the library
+```
+❯ yarn ng build mylib
+Building Angular Package
+Cannot find package '@angular/compiler-cli' imported from src\ng16-yarn-pnp\.yarn\__virtual__\ng-packagr-virtual-fa520e598e\0\cache\ng-packagr-npm-13.1.2-a4236d0e43-5c40f95760.zip\node_modules\ng-packagr\lib\utils\ng-compiler-cli.js
+Did you mean to import @angular-compiler-cli-virtual-759efba812/0/cache/@angular-compiler-cli-npm-13.1.1-a3378c32eb-2c9f958b04.zip/node_modules/@angular/compiler-cli/bundles/index.js?
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+6. Add an app
+```
+yarn ng g application myapp
+```
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+7. Try building the app
+```
+❯ yarn ng build myapp
+❯ yarn ng build myapp
+An unhandled exception occurred: Cannot find package '@angular/compiler-cli' imported from src\ng16-yarn-pnp\.yarn\__virtual__\@angular-devkit-build-angular-virtual-0b6cfeb8e3\0\cache\@angular-devkit-build-angular-npm-13.1.2-dd6ab16ee6-3358052985.zip\node_modules\@angular-devkit\build-angular\src\utils\load-esm.js
+Did you mean to import @angular-compiler-cli-virtual-759efba812/0/cache/@angular-compiler-cli-npm-13.1.1-a3378c32eb-2c9f958b04.zip/node_modules/@angular/compiler-cli/bundles/index.js?
+```
