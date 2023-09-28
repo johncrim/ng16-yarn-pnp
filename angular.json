@@ -40,7 +40,20 @@
               "**/*.karma-spec.ts"
             ],
             "codeCoverageExclude": [
-              "**/*.spec.ts"
+              "**/*.jest-spec.ts"
+            ]
+          }
+        },
+        "test-jest": {
+          "builder": "@angular-devkit/build-angular:jest",
+          "options": {
+            "tsConfig": "tsconfig.jest-spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "include": [
+              "**/*.jest-spec.ts"
             ]
           }
         }
