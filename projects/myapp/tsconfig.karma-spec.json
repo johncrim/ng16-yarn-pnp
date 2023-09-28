@@ -8,7 +8,7 @@
     ]
   },
   "include": [
-    "**/*.spec.ts",
-    "**/*.d.ts"
+    "src/**/*.karma-spec.ts",
+    "src/**/*.d.ts"
   ]
 }
