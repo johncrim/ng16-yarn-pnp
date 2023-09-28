@@ -28,7 +28,7 @@
           },
           "defaultConfiguration": "production"
         },
-        "test": {
+        "test-karma": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "tsConfig": "projects/mylib/tsconfig.karma-spec.json",
@@ -122,7 +122,7 @@
             "browserTarget": "myapp:build"
           }
         },
-        "test": {
+        "test-karma": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "polyfills": [
