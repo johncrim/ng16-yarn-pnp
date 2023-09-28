@@ -8,7 +8,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test:karma": "ng run mylib:test-karma --watch false && ng run myapp:test-karma --watch false",
-    "test:jest": "ng run mylib:test-jest"
+    "test:jest": "NODE_NO_WARNINGS=1 ng run mylib:test-jest && NODE_NO_WARNINGS=1 ng run myapp:test-jest"
   },
   "private": true,
   "dependencies": {
