@@ -57,3 +57,17 @@ yarn start
 ```
 
 WOAAA!! #mind-blown
+
+## Updating Dependencies
+
+To update Angular dependencies, which runs Angular migrations:
+
+1. Make sure there are no git changes (if there are, `git stash` them)
+2. ` yarn dlx -p @angular/cli ng update @angular/cli`
+3. Commit changes in single update commit (eg `chore(ng update): ng dependencies`)
+
+To update other dependencies:
+
+1. Make sure there are no git changes (if there are, `git stash` them). This is not strictly required, but is a good idea.
+2. `yarn upgrade-interactive`
+3. Choose the packages + versions to upgrade
