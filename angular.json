@@ -32,6 +32,7 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "tsConfig": "projects/mylib/tsconfig.karma-spec.json",
+            "karmaConfig": "projects/mylib/karma.conf.cjs",
             "polyfills": [
               "zone.js",
               "zone.js/testing"
@@ -138,11 +139,8 @@
         "test-karma": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
             "tsConfig": "projects/myapp/tsconfig.karma-spec.json",
+            "karmaConfig": "projects/myapp/karma.conf.cjs",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/myapp/src/favicon.ico",
@@ -151,12 +149,16 @@
             "styles": [
               "projects/myapp/src/styles.scss"
             ],
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
             "scripts": [],
             "include": [
               "**/*.karma-spec.ts"
             ],
             "codeCoverageExclude": [
-              "**/*.spec.ts"
+              "**/*.jest-spec.ts"
             ]
           }
         },
