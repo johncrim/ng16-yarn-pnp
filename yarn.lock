@@ -3807,6 +3807,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ansi-regex@npm:^3.0.0":
+  version: 3.0.1
+  resolution: "ansi-regex@npm:3.0.1"
+  checksum: 09daf180c5f59af9850c7ac1bd7fda85ba596cc8cbeb210826e90755f06c818af86d9fa1e6e8322fab2c3b9e9b03f56c537b42241139f824dd75066a1e7257cc
+  languageName: node
+  linkType: hard
+
 "ansi-regex@npm:^5.0.1":
   version: 5.0.1
   resolution: "ansi-regex@npm:5.0.1"
@@ -4376,7 +4383,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^2.4.2":
+"chalk@npm:^2.0.1, chalk@npm:^2.1.0, chalk@npm:^2.4.2":
   version: 2.4.2
   resolution: "chalk@npm:2.4.2"
   dependencies:
@@ -7743,6 +7750,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"karma-junit-reporter@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "karma-junit-reporter@npm:2.0.1"
+  dependencies:
+    path-is-absolute: ^1.0.0
+    xmlbuilder: 12.0.0
+  peerDependencies:
+    karma: ">=0.9"
+  checksum: f4c92725f68c19740e34ccf71b9acb9bdc4127b8f5a7c2417167d045bb3b8ba682f7ef5b9f1c7c1c5482b1c53b0d69533cf93748368bd0c0fb9c2967ba23c02d
+  languageName: node
+  linkType: hard
+
+"karma-mocha-reporter@npm:^2.2.5":
+  version: 2.2.5
+  resolution: "karma-mocha-reporter@npm:2.2.5"
+  dependencies:
+    chalk: ^2.1.0
+    log-symbols: ^2.1.0
+    strip-ansi: ^4.0.0
+  peerDependencies:
+    karma: ">=0.13"
+  checksum: 8b9e43c64bc975d38c18958d7ba95baf9a8d23f11ee4641955fe0ae5e8bd563596c8965d6f290ce8c73c4832fb98bb7ed5fbbaa82b49273d2ca24aa7f3d0d5e5
+  languageName: node
+  linkType: hard
+
 "karma-source-map-support@npm:1.4.0":
   version: 1.4.0
   resolution: "karma-source-map-support@npm:1.4.0"
@@ -7981,6 +8013,15 @@ __metadata:
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
+  languageName: node
+  linkType: hard
+
+"log-symbols@npm:^2.1.0":
+  version: 2.2.0
+  resolution: "log-symbols@npm:2.2.0"
+  dependencies:
+    chalk: ^2.0.1
+  checksum: 4c95e3b65f0352dbe91dc4989c10baf7a44e2ef5b0db7e6721e1476268e2b6f7090c3aa880d4f833a05c5c3ff18f4ec5215a09bd0099986d64a8186cfeb48ac8
   languageName: node
   linkType: hard
 
@@ -8553,6 +8594,8 @@ __metadata:
     karma-coverage: ^2.2.1
     karma-jasmine: ^5.1.0
     karma-jasmine-html-reporter: ^2.1.0
+    karma-junit-reporter: ^2.0.1
+    karma-mocha-reporter: ^2.2.5
     ng-packagr: ^16.2.3
     rxjs: ~7.8.1
     tslib: ^2.6.2
@@ -10506,6 +10549,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"strip-ansi@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "strip-ansi@npm:4.0.0"
+  dependencies:
+    ansi-regex: ^3.0.0
+  checksum: d9186e6c0cf78f25274f6750ee5e4a5725fb91b70fdd79aa5fe648eab092a0ec5b9621b22d69d4534a56319f75d8944efbd84e3afa8d4ad1b9a9491f12c84eca
+  languageName: node
+  linkType: hard
+
 "strip-ansi@npm:^7.0.1":
   version: 7.1.0
   resolution: "strip-ansi@npm:7.1.0"
@@ -11531,6 +11583,13 @@ __metadata:
   version: 4.0.0
   resolution: "xml-name-validator@npm:4.0.0"
   checksum: af100b79c29804f05fa35aa3683e29a321db9b9685d5e5febda3fa1e40f13f85abc40f45a6b2bf7bee33f68a1dc5e8eaef4cec100a304a9db565e6061d4cb5ad
+  languageName: node
+  linkType: hard
+
+"xmlbuilder@npm:12.0.0":
+  version: 12.0.0
+  resolution: "xmlbuilder@npm:12.0.0"
+  checksum: b384b2ae80f42fc8f4671078dc7b4266849ead31c7be8393cf95906103cacf48c98eac10cf3686c87baeb4a4e44f2639ef49a67a60acd105e87526b4d98d4ef8
   languageName: node
   linkType: hard
 

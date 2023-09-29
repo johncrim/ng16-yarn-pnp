@@ -49,6 +49,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["karma-coverage", "npm:2.2.1"],\
             ["karma-jasmine", "virtual:4b6f9fa1a034a37880f791547f236c52c71c16041c7daf2d9243ffd086304d79d503e942232c54589a904334baad9df6890d7d0dbcc2e58eb0835231660056f0#npm:5.1.0"],\
             ["karma-jasmine-html-reporter", "virtual:4b6f9fa1a034a37880f791547f236c52c71c16041c7daf2d9243ffd086304d79d503e942232c54589a904334baad9df6890d7d0dbcc2e58eb0835231660056f0#npm:2.1.0"],\
+            ["karma-junit-reporter", "virtual:4b6f9fa1a034a37880f791547f236c52c71c16041c7daf2d9243ffd086304d79d503e942232c54589a904334baad9df6890d7d0dbcc2e58eb0835231660056f0#npm:2.0.1"],\
+            ["karma-mocha-reporter", "virtual:4b6f9fa1a034a37880f791547f236c52c71c16041c7daf2d9243ffd086304d79d503e942232c54589a904334baad9df6890d7d0dbcc2e58eb0835231660056f0#npm:2.2.5"],\
             ["ng-packagr", "virtual:4b6f9fa1a034a37880f791547f236c52c71c16041c7daf2d9243ffd086304d79d503e942232c54589a904334baad9df6890d7d0dbcc2e58eb0835231660056f0#npm:16.2.3"],\
             ["rxjs", "npm:7.8.1"],\
             ["tslib", "npm:2.6.2"],\
@@ -5802,6 +5804,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["ansi-regex", [\
+        ["npm:3.0.1", {\
+          "packageLocation": "./.yarn/cache/ansi-regex-npm-3.0.1-01f44078a3-09daf180c5.zip/node_modules/ansi-regex/",\
+          "packageDependencies": [\
+            ["ansi-regex", "npm:3.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:5.0.1", {\
           "packageLocation": "./.yarn/cache/ansi-regex-npm-5.0.1-c963a48615-2aa4bb54ca.zip/node_modules/ansi-regex/",\
           "packageDependencies": [\
@@ -10342,6 +10351,55 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["karma-junit-reporter", [\
+        ["npm:2.0.1", {\
+          "packageLocation": "./.yarn/cache/karma-junit-reporter-npm-2.0.1-bf52371321-f4c92725f6.zip/node_modules/karma-junit-reporter/",\
+          "packageDependencies": [\
+            ["karma-junit-reporter", "npm:2.0.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:4b6f9fa1a034a37880f791547f236c52c71c16041c7daf2d9243ffd086304d79d503e942232c54589a904334baad9df6890d7d0dbcc2e58eb0835231660056f0#npm:2.0.1", {\
+          "packageLocation": "./.yarn/__virtual__/karma-junit-reporter-virtual-90f00cd5f1/0/cache/karma-junit-reporter-npm-2.0.1-bf52371321-f4c92725f6.zip/node_modules/karma-junit-reporter/",\
+          "packageDependencies": [\
+            ["karma-junit-reporter", "virtual:4b6f9fa1a034a37880f791547f236c52c71c16041c7daf2d9243ffd086304d79d503e942232c54589a904334baad9df6890d7d0dbcc2e58eb0835231660056f0#npm:2.0.1"],\
+            ["@types/karma", null],\
+            ["karma", "npm:6.4.2"],\
+            ["path-is-absolute", "npm:1.0.1"],\
+            ["xmlbuilder", "npm:12.0.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/karma",\
+            "karma"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["karma-mocha-reporter", [\
+        ["npm:2.2.5", {\
+          "packageLocation": "./.yarn/cache/karma-mocha-reporter-npm-2.2.5-4329166101-8b9e43c64b.zip/node_modules/karma-mocha-reporter/",\
+          "packageDependencies": [\
+            ["karma-mocha-reporter", "npm:2.2.5"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:4b6f9fa1a034a37880f791547f236c52c71c16041c7daf2d9243ffd086304d79d503e942232c54589a904334baad9df6890d7d0dbcc2e58eb0835231660056f0#npm:2.2.5", {\
+          "packageLocation": "./.yarn/__virtual__/karma-mocha-reporter-virtual-b4159e9c2e/0/cache/karma-mocha-reporter-npm-2.2.5-4329166101-8b9e43c64b.zip/node_modules/karma-mocha-reporter/",\
+          "packageDependencies": [\
+            ["karma-mocha-reporter", "virtual:4b6f9fa1a034a37880f791547f236c52c71c16041c7daf2d9243ffd086304d79d503e942232c54589a904334baad9df6890d7d0dbcc2e58eb0835231660056f0#npm:2.2.5"],\
+            ["@types/karma", null],\
+            ["chalk", "npm:2.4.2"],\
+            ["karma", "npm:6.4.2"],\
+            ["log-symbols", "npm:2.2.0"],\
+            ["strip-ansi", "npm:4.0.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/karma",\
+            "karma"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["karma-source-map-support", [\
         ["npm:1.4.0", {\
           "packageLocation": "./.yarn/cache/karma-source-map-support-npm-1.4.0-b31519ef26-7a482bc836.zip/node_modules/karma-source-map-support/",\
@@ -10561,6 +10619,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["log-symbols", [\
+        ["npm:2.2.0", {\
+          "packageLocation": "./.yarn/cache/log-symbols-npm-2.2.0-9541ad4da6-4c95e3b65f.zip/node_modules/log-symbols/",\
+          "packageDependencies": [\
+            ["log-symbols", "npm:2.2.0"],\
+            ["chalk", "npm:2.4.2"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:4.1.0", {\
           "packageLocation": "./.yarn/cache/log-symbols-npm-4.1.0-0a13492d8b-fce1497b31.zip/node_modules/log-symbols/",\
           "packageDependencies": [\
@@ -11187,6 +11253,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["karma-coverage", "npm:2.2.1"],\
             ["karma-jasmine", "virtual:4b6f9fa1a034a37880f791547f236c52c71c16041c7daf2d9243ffd086304d79d503e942232c54589a904334baad9df6890d7d0dbcc2e58eb0835231660056f0#npm:5.1.0"],\
             ["karma-jasmine-html-reporter", "virtual:4b6f9fa1a034a37880f791547f236c52c71c16041c7daf2d9243ffd086304d79d503e942232c54589a904334baad9df6890d7d0dbcc2e58eb0835231660056f0#npm:2.1.0"],\
+            ["karma-junit-reporter", "virtual:4b6f9fa1a034a37880f791547f236c52c71c16041c7daf2d9243ffd086304d79d503e942232c54589a904334baad9df6890d7d0dbcc2e58eb0835231660056f0#npm:2.0.1"],\
+            ["karma-mocha-reporter", "virtual:4b6f9fa1a034a37880f791547f236c52c71c16041c7daf2d9243ffd086304d79d503e942232c54589a904334baad9df6890d7d0dbcc2e58eb0835231660056f0#npm:2.2.5"],\
             ["ng-packagr", "virtual:4b6f9fa1a034a37880f791547f236c52c71c16041c7daf2d9243ffd086304d79d503e942232c54589a904334baad9df6890d7d0dbcc2e58eb0835231660056f0#npm:16.2.3"],\
             ["rxjs", "npm:7.8.1"],\
             ["tslib", "npm:2.6.2"],\
@@ -13376,6 +13444,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["strip-ansi", [\
+        ["npm:4.0.0", {\
+          "packageLocation": "./.yarn/cache/strip-ansi-npm-4.0.0-d4de985014-d9186e6c0c.zip/node_modules/strip-ansi/",\
+          "packageDependencies": [\
+            ["strip-ansi", "npm:4.0.0"],\
+            ["ansi-regex", "npm:3.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:6.0.1", {\
           "packageLocation": "./.yarn/cache/strip-ansi-npm-6.0.1-caddc7cb40-f3cd25890a.zip/node_modules/strip-ansi/",\
           "packageDependencies": [\
@@ -14609,6 +14685,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/xml-name-validator-npm-4.0.0-0857c21729-af100b79c2.zip/node_modules/xml-name-validator/",\
           "packageDependencies": [\
             ["xml-name-validator", "npm:4.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["xmlbuilder", [\
+        ["npm:12.0.0", {\
+          "packageLocation": "./.yarn/cache/xmlbuilder-npm-12.0.0-cbaec3804d-b384b2ae80.zip/node_modules/xmlbuilder/",\
+          "packageDependencies": [\
+            ["xmlbuilder", "npm:12.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
